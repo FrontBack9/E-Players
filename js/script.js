@@ -1,15 +1,13 @@
 
-// uso do jQuery
+// jQuery
 $(document).ready(function () {
-    // todas as suas funções jQuery
+    // Todas as funções do jQuery
 
     $(".btn-buy").click(function(){
         alert("Este produto não está disponível");
     });
 
-    // $(".menu-bars").click(function(){
-    //     $(".menu").toggleClass('mostraEscondeMenu')    
-    // });
+    
     
 });
 
