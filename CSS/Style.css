@@ -330,3 +330,13 @@ header .menu-bars {
     text-align: center;
 
 }
+
+main .descricao{
+    display: flex;
+    background-image: url(../images/fundo-sobre.png);
+
+}
+
+.descricao1{
+    margin-top: 60px;
+}
