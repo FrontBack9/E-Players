@@ -1,5 +1,5 @@
 
-/* importaçãos das fontes */
+/* Importação das Fontes */
 @font-face {
     font-family: "Roboto-Thin";
     src: url(../fonts/Roboto/Roboto-Thin.ttf);
@@ -30,28 +30,28 @@
 body {
     font-family: 'Roboto-Regular';
     color: white;
-    /* herança */
+    
 }
 
-/* Customização do Bootstrap */
+/* Customizando o Bootstrap */
 
-/* CSS para o Desktop */
+/* CSS  Desktop */
 
 
 
 .container-grid {
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 1px solid salmon; */
+    
 }
 
 .container {
     max-width: 1200px;
 }
 
-/* cabeçalho */
+/* Cabeçalho */
 .header-flex {
-    /* flex conteiner */
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +64,6 @@ header {
 }
 
 header .logo {
-    /* border: 1px solid red; */
     width: 280px;
 }
 
@@ -72,7 +71,6 @@ header .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid white; */
     width: 60%;
     height: 100%;
 }
@@ -88,11 +86,10 @@ header .menu a {
 header .menu-bars {
     display: none;
 }
-/* banner */
+
 
 .banner {
     width: 100%;
-    /*  não precisaria!! */
     height: 600px;
     background-image: url(../images/banner_pilotos.png);
     background-size: cover;
@@ -100,7 +97,7 @@ header .menu-bars {
     background-color: blueviolet;
 }
 
-/* centraliza a informação do banner */
+/* A informação do banner fica centralizada */
 .banner .banner-info-box {
     display: flex;
     justify-content: flex-end;
@@ -114,7 +111,7 @@ header .menu-bars {
     justify-content: space-between;
     width: 500px;
     height: 250px;
-    /* border: 1px solid white; */
+    
 }
 
 .banner .banner-info .info-title {
@@ -159,10 +156,10 @@ header .menu-bars {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #5c5858; */
+    
 }
 
-/* SESSÃO PRODUTOS */
+/* Sessão de Produtos */
 .produtos {
     background-color: #1E1C21;
     padding: 30px 0;
@@ -183,7 +180,7 @@ header .menu-bars {
 
 .card .card-title {
     font-family: 'Roboto-Medium';
-    /* text-transform: uppercase; */
+    
 }
 
 .card .card-price {
@@ -194,9 +191,8 @@ header .menu-bars {
 .card .btn-buy {
     background-color: #C31616;
     border: 1px solid #C31616;
-
     width: 100%;
-    /* text-transform: uppercase; */
+    
 }
 
 .card .card-title,
@@ -211,15 +207,15 @@ header .menu-bars {
 }
 
 
-/* BREAKPOINTS */
+/* A cada mudança na resolução, um dispositivo diferente e um formato diferente */
 /* 
-    celulares 0 - 767px
-    tablets 768px - 991px
-    desktop >= 992px - 1199px
-    telas grandes >= 1200px
+    Celulares varia de 0 - 767px
+    Tablets varia de 768px - 991px
+    Desktop vai de 992px - 1199px
+    Telas Grandes superiores ou = 1200px
 */
 
-/* DESKTOP tablets 992px - 1199px */
+/* Desktops varia de 992px - 1199px */
 @media all and (max-width: 1199px) {
 
     .container,
@@ -228,7 +224,7 @@ header .menu-bars {
     }
 }
 
-/* TABLETS tablets 768px - 991px*/
+/* Tablets varia de 768px - 991px*/
 @media all and (max-width: 991px) {
     header .logo {
         width: 230px;
@@ -239,13 +235,13 @@ header .menu-bars {
     /* navbar */
     header .menu {
         position: fixed;
-        /* referência viewport */
+        /* Viewport */
         top: 0px;
-        /* coordenadas de posicinoamento */
+        /* Coordenadas de posicionamento quanto mais negativo + esconde e o contrário + aparece */
         left: -80%;
-        z-index: 100; /* controle de camada */
+        z-index: 100; /* Executa o controle de camada */
 
-        opacity: 0; /* invisível  */
+        opacity: 0; /* Assume dois valores 0 e 1 .Se for 0 é invisível se for 1 é visível  */
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
@@ -276,7 +272,7 @@ header .menu-bars {
     
     .mostraEscondeMenu {
         left: 0 !important;
-        opacity: 1 !important; /* visível */
+        opacity: 1 !important; /* Assume dois valores 0 e 1 .Se for 0 é invisível se for 1 é visível */
     }
 
     .patrocinados {
@@ -285,7 +281,7 @@ header .menu-bars {
 }
 
 
-/* SMARTPHONES celulares 0 - 767px */
+/* Smartphones varia de 0 - 767px */
 @media all and (max-width: 767px) {
     
     .header-flex {
@@ -328,6 +324,7 @@ header .menu-bars {
     color: white;
     background: #1E1C21;
     text-align: center;
+    
 
 }
 
@@ -339,4 +336,10 @@ main .descricao{
 
 .descricao1{
     margin-top: 60px;
+
+}
+
+.icons{
+    margin-right: auto;
+    margin-left: auto;
 }
