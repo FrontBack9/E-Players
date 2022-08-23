@@ -97,7 +97,7 @@ header .menu-bars {
     background-color: blueviolet;
 }
 
-/* A informação do banner fica centralizada */
+/* Banner Centralizado */
 .banner .banner-info-box {
     display: flex;
     justify-content: flex-end;
@@ -159,7 +159,7 @@ header .menu-bars {
     
 }
 
-/* Sessão de Produtos */
+/* Seção de Produtos */
 .produtos {
     background-color: #1E1C21;
     padding: 30px 0;
